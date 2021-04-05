@@ -1,0 +1,44 @@
+.cards-container {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.card-item-content {
+  width: 100%;
+  padding: 1.2rem;
+  flex-flow: column;
+  flex-grow: 1;
+}
+
+.card-item-content img {
+  height: auto;
+  /* width: 100%; */
+  max-width: 100%;
+}
+
+.card-item-content h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card-item-content a {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.card-item-content a:visited {
+  color: #000000;
+}
+
+.card-item-content a:hover {
+  text-decoration: underline;
+}
+
+.card-item-text {
+  padding: 1rem;
+  background-color: #ffffff;
+}

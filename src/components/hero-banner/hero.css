@@ -1,6 +1,6 @@
 .hero-container {
   width: 100%;
-  padding-top: 80px;
+  padding-top: 80px; /* remove if changing on scroll behaviour*/
   height: 100vh;
   display: flex;
   flex-flow: column nowrap;
