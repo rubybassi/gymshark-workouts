@@ -1,0 +1,13 @@
+.nav-container {
+  background-color: #000000;
+  height: 80px;
+  display: flex;
+  position: fixed;
+  top: 10;
+  width: 100%;
+}
+.nav-logo > img {
+  padding: 3vh;
+  margin-left: 5vh;
+  height: 100%;
+}
