@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import Nav from "./components/nav/Nav";
 import HeroBanner from "./components/hero-banner/HeroBanner";
+import Cards from "./components/cards/Cards";
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <Nav />
       <HeroBanner />
       <div className="container">
-        <h1>Browse hundreds of training videos</h1>
+        <Cards />
       </div>
     </div>
   );

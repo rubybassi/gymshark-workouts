@@ -7,6 +7,7 @@ a.button {
   text-transform: uppercase;
   border-radius: 2px;
   color: #ffffff;
+  font-size: 1.6rem;
 }
 
 a.button:hover {
