@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/gymshark-workouts/static/css/main.687df8bf.chunk.css",
+    "main.css": "/gymshark-workouts/static/css/main.8a661d5a.chunk.css",
     "main.js": "/gymshark-workouts/static/js/main.3cb7ca80.chunk.js",
     "main.js.map": "/gymshark-workouts/static/js/main.3cb7ca80.chunk.js.map",
     "runtime-main.js": "/gymshark-workouts/static/js/runtime-main.2724331e.js",
@@ -10,7 +10,7 @@
     "index.html": "/gymshark-workouts/index.html",
     "service-worker.js": "/gymshark-workouts/service-worker.js",
     "service-worker.js.map": "/gymshark-workouts/service-worker.js.map",
-    "static/css/main.687df8bf.chunk.css.map": "/gymshark-workouts/static/css/main.687df8bf.chunk.css.map",
+    "static/css/main.8a661d5a.chunk.css.map": "/gymshark-workouts/static/css/main.8a661d5a.chunk.css.map",
     "static/js/2.cf619222.chunk.js.LICENSE.txt": "/gymshark-workouts/static/js/2.cf619222.chunk.js.LICENSE.txt",
     "static/media/gymshark-mix.be83959d.mp4": "/gymshark-workouts/static/media/gymshark-mix.be83959d.mp4",
     "static/media/logo.aee0b773.svg": "/gymshark-workouts/static/media/logo.aee0b773.svg"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.2724331e.js",
     "static/js/2.cf619222.chunk.js",
-    "static/css/main.687df8bf.chunk.css",
+    "static/css/main.8a661d5a.chunk.css",
     "static/js/main.3cb7ca80.chunk.js"
   ]
 }
