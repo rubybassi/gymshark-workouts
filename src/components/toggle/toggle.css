@@ -1,0 +1,27 @@
+.toggle-container {
+  display: flex;
+  margin-bottom: 36px;
+  color: white;
+  justify-content: center;
+}
+
+ .toggle-container input {
+  display: none;
+} 
+
+.toggle-container label {
+  font-size: 1.6rem;
+  padding: 2rem;
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+  border: solid 1px white;
+  width: 150px;
+}
+
+.toggle-container label:hover {
+  cursor: pointer;
+}
+
+.toggle-container input:checked {
+  background-color: white;
+  color: #000;
+}

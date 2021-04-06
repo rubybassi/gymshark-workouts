@@ -3,7 +3,7 @@ import "./button.css";
 
 const Button = ({ children }) => {
   return (
-    <a className="button" href="/#">
+    <a className="button" href="/#featured">
       {children}
     </a>
   );
