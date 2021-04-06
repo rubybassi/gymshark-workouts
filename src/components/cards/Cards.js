@@ -1,19 +1,9 @@
-import React from 'react'
-import CardItem from './CardItem'
-import "./card.css"
+import React from "react";
+import CardItem from "./CardItem";
+import "./card.css";
 
-const Cards = () => {
-  return (
-    <div className="cards-container">
-      <CardItem />
-      <CardItem />
-      <CardItem />
-      <CardItem />
-      <CardItem />
-      <CardItem />
-      <CardItem />
-    </div>
-  )
-}
+const Cards = ({ exercise }) => {
+  return <CardItem src={exercise.female.image} name={exercise.name} />;
+};
 
-export default Cards
+export default Cards;
