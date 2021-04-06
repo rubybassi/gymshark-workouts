@@ -1,26 +1,17 @@
-.cards-container {
-  width: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
-  align-items: stretch;
-}
-
-.card-item-content {
-  width: 100%;
+.card-item-wrapper {
+  width: 300px;
   padding: 1.2rem;
   flex-flow: column;
-  flex-grow: 1;
 }
 
-.card-item-content img {
+.card-item-wrapper img {
   height: auto;
-  /* width: 100%; */
   max-width: 100%;
+  width: 100%;
 }
 
 .card-item-content h3 {
-  font-size: 2rem;
+  font-size: 1.7rem;
   margin-bottom: 2rem;
 }
 
@@ -39,6 +30,7 @@
 }
 
 .card-item-text {
+  width: 100%;
   padding: 1rem;
   background-color: #ffffff;
 }
