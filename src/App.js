@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import Nav from "./components/nav/Nav";
-import Footer from "./components/footer/Footer"
+import Footer from "./components/footer/Footer";
 import HeroBanner from "./components/hero-banner/HeroBanner";
 import CardItem from "./components/cards/CardItem";
 import FeatureBar from "./components/featureBar/FeatureBar";
@@ -54,7 +54,7 @@ function App() {
         handleGenderSelection={handleGenderSelection}
         genderToggle={genderToggle}
       />
-      <main className="container">
+      <main className="container" >
         {isLoading ? (
           <h2>Please wait ...</h2>
         ) : (
@@ -91,7 +91,7 @@ function App() {
           </>
         )}
       </main>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
