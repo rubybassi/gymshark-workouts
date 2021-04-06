@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import Nav from "./components/nav/Nav";
+import Footer from "./components/footer/Footer"
 import HeroBanner from "./components/hero-banner/HeroBanner";
 import CardItem from "./components/cards/CardItem";
 import FeatureBar from "./components/featureBar/FeatureBar";
@@ -90,6 +91,7 @@ function App() {
           </>
         )}
       </main>
+      <Footer/>
     </div>
   );
 }
