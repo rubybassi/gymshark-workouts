@@ -1,7 +1,7 @@
 import React from "react";
 import "./card.css";
 
-const CardItem = ({ genderToggle, name, femaleImage, maleImage, id, handlebtn }) => {
+const CardItem = ({ genderToggle, name, femaleImage, maleImage, id, onViewExercise }) => {
 
   return (
     <div className="card-item-wrapper">
@@ -11,7 +11,7 @@ const CardItem = ({ genderToggle, name, femaleImage, maleImage, id, handlebtn })
       />
       <div className="card-item-content">
         <h3>{name}</h3>
-        <button className="card-button" id={id} onClick={handlebtn}>View exercise</button>
+        <button type="button" className="card-button" id={id} onClick={onViewExercise}>View exercise</button>
       </div>
     </div>
   );

@@ -1,13 +1,13 @@
 import React from "react";
 import "./modal.css";
 
-const Modal = ({ showModal, exercise, openModal, genderToggle }) => {
+const Modal = ({ showModal, exercise, onModalToggle, genderToggle }) => {
   return (
     <>
       {showModal ? (
         <section className="modal-background">
           <article className="modal-wrapper">
-            <button onClick={openModal}>Close</button>
+            <button type="button" onClick={onModalToggle}>Close</button>
             {genderToggle === "womens" ? (
               <img src={exercise.female.image} alt={exercise.name} />
             ) : (

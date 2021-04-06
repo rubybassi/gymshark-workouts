@@ -24,12 +24,13 @@ function App() {
         const response = await fetch(URL);
         const payload = await response.json();
         if (payload && Array.isArray(payload.exercises)) {
-          setWorkouts(payload.exercises.slice(0, 12) || []); // just displaying 12 results but will try to add pagination as ~250 results
+          //setWorkouts(payload.exercises.slice(0, 12) || []); just displaying 12 results but will try to add pagination as ~250 results
+          setWorkouts(payload.exercises || []);
           setIsLoading(false);
-        } else throw new Error("Sorry, there are no workouts to display");
+        } else throw "payload is empty or not an array";
       } catch (error) {
         console.log(error.message);
-        setErrorMessage("Sorry there has been an error fetching data");
+        setErrorMessage("Sorry there has been an error fetching your workouts.");
         setIsLoading(false);
       }
     };
@@ -38,10 +39,9 @@ function App() {
 
   const handleGenderSelection = (e) => setGenderToggle(e.target.value);
 
-  const openModal = () => setShowModal((prev) => !prev);
+  const onModalToggle = () => setShowModal((prev) => !prev);
 
-  const handlebtn = (e) => {
-    e.preventDefault();
+  const onViewExercise = (e) => {
     setSelectedExcercise(e.target.id);
     setShowModal(true);
   };
@@ -54,9 +54,9 @@ function App() {
         handleGenderSelection={handleGenderSelection}
         genderToggle={genderToggle}
       />
-      <main className="container" >
+      <main className="container">
         {isLoading ? (
-          <h2>Please wait ...</h2>
+          <h2>Fecthing workouts...</h2>
         ) : (
           <>
             {errorMessage && <h2>{errorMessage}</h2>}
@@ -70,7 +70,7 @@ function App() {
                     femaleImage={exercise.female.image}
                     maleImage={exercise.male.image}
                     id={exercise.id}
-                    handlebtn={handlebtn}
+                    onViewExercise={onViewExercise}
                   />
                 ))}
                 {workouts
@@ -80,13 +80,13 @@ function App() {
                       key={filteredExercise.id}
                       exercise={filteredExercise}
                       showModal={showModal}
-                      openModal={openModal}
+                      onModalToggle={onModalToggle}
                       genderToggle={genderToggle}
                     />
                   ))}
               </>
             ) : (
-              <h2>No exercises to display</h2>
+              <h2>Sorry, no exercises to display</h2>
             )}
           </>
         )}
