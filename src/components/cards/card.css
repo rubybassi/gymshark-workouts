@@ -10,6 +10,11 @@
   width: 100%;
 }
 
+.card-item-content {
+  padding: 1rem;
+  background-color: #ffffff;
+}
+
 .card-item-content h3 {
   font-size: 1.7rem;
   margin-bottom: 2rem;
@@ -19,6 +24,7 @@
   font-size: 1.6rem;
   margin-bottom: 2rem;
   display: block;
+
 }
 
 .card-item-content a:visited {
@@ -29,8 +35,11 @@
   text-decoration: underline;
 }
 
-.card-item-text {
-  width: 100%;
-  padding: 1rem;
-  background-color: #ffffff;
+.card-button {
+  padding: 1rem 2rem;
+  background: #000000;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
 }
