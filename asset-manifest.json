@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/gymshark-workouts/static/css/main.687df8bf.chunk.css",
-    "main.js": "/gymshark-workouts/static/js/main.65de7065.chunk.js",
-    "main.js.map": "/gymshark-workouts/static/js/main.65de7065.chunk.js.map",
+    "main.js": "/gymshark-workouts/static/js/main.3cb7ca80.chunk.js",
+    "main.js.map": "/gymshark-workouts/static/js/main.3cb7ca80.chunk.js.map",
     "runtime-main.js": "/gymshark-workouts/static/js/runtime-main.2724331e.js",
     "runtime-main.js.map": "/gymshark-workouts/static/js/runtime-main.2724331e.js.map",
     "static/js/2.cf619222.chunk.js": "/gymshark-workouts/static/js/2.cf619222.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.2724331e.js",
     "static/js/2.cf619222.chunk.js",
     "static/css/main.687df8bf.chunk.css",
-    "static/js/main.65de7065.chunk.js"
+    "static/js/main.3cb7ca80.chunk.js"
   ]
 }
