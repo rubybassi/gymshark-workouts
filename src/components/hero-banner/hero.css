@@ -32,7 +32,13 @@ h2 {
 }
 
 .hero-content > h2 {
-  font-size: 3vw;
+  font-size: 5vw;
   font-weight: 100;
   margin-bottom: 40px;
+}
+
+@media screen and (min-width: 769px) {
+  .hero-content > h2 {
+    font-size: 3vw;
+  }
 }

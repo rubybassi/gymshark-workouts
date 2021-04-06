@@ -15,7 +15,7 @@
 
 .modal-wrapper {
   width: 80vw;
-  height: 90vh;
+  height: 100vh;
   background: rgb(235, 235, 235);
   color: #000;
   display: flex;
@@ -72,10 +72,14 @@ button:hover {
   .modal-text > ol,
   li,
   b,
-  h3 {
+  h3, p {
     font-size: 1.3rem;
   }
   .modal-wrapper img {
     max-width: 50vh;
+  }
+
+  button {
+    font-size: 1.3rem;
   }
 }
