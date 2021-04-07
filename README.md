@@ -3,7 +3,7 @@
 ![](https://img.shields.io/badge/license-MIT-Green) ![GitHub Repo stars](https://img.shields.io/github/stars/rubybassi?style=social)
 
 ## Description
-A responsive website built with react.js and vanilla css, fetching API data to render excercises on page load.
+A responsive website built with react.js and vanilla css, fetching API data to render excercises on page load and features lazy loading.
 
 The application allows the user to toggle between displaying men or womens images to provide a personalised experience and features a modal to display additonal workout information on selection.
 
@@ -32,8 +32,8 @@ App Summary:
 Clone the repo and in the command line run `npm install` or shortcut `npm i` to download all the npm package dependancies, then invoke the application with command `npm run start`.
 
 ## Future Developments
-* Implement infinite scolling, lazy loading or pagination to improve UX.
 * Incorporate search by workout type or name functionality
+* Add sort by workout type feature
 
 ## License
 MIT
@@ -41,6 +41,6 @@ MIT
 ## Environment
 * React.js
 * Github pages
-* NPM
+* NPM React-lazyload
 * Git
 * Visual Studio Code

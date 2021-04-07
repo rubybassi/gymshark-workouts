@@ -44,3 +44,10 @@
   font-size: 1rem;
   cursor: pointer;
 }
+
+.card-data-loading {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 100vh;
+}
