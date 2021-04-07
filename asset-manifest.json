@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/gymshark-workouts/static/css/main.93bfcdb9.chunk.css",
-    "main.js": "/gymshark-workouts/static/js/main.5f953eef.chunk.js",
-    "main.js.map": "/gymshark-workouts/static/js/main.5f953eef.chunk.js.map",
+    "main.css": "/gymshark-workouts/static/css/main.1faadc04.chunk.css",
+    "main.js": "/gymshark-workouts/static/js/main.ca2684cc.chunk.js",
+    "main.js.map": "/gymshark-workouts/static/js/main.ca2684cc.chunk.js.map",
     "runtime-main.js": "/gymshark-workouts/static/js/runtime-main.2724331e.js",
     "runtime-main.js.map": "/gymshark-workouts/static/js/runtime-main.2724331e.js.map",
-    "static/js/2.cf619222.chunk.js": "/gymshark-workouts/static/js/2.cf619222.chunk.js",
-    "static/js/2.cf619222.chunk.js.map": "/gymshark-workouts/static/js/2.cf619222.chunk.js.map",
+    "static/js/2.d8ffe05e.chunk.js": "/gymshark-workouts/static/js/2.d8ffe05e.chunk.js",
+    "static/js/2.d8ffe05e.chunk.js.map": "/gymshark-workouts/static/js/2.d8ffe05e.chunk.js.map",
     "index.html": "/gymshark-workouts/index.html",
     "service-worker.js": "/gymshark-workouts/service-worker.js",
     "service-worker.js.map": "/gymshark-workouts/service-worker.js.map",
-    "static/css/main.93bfcdb9.chunk.css.map": "/gymshark-workouts/static/css/main.93bfcdb9.chunk.css.map",
-    "static/js/2.cf619222.chunk.js.LICENSE.txt": "/gymshark-workouts/static/js/2.cf619222.chunk.js.LICENSE.txt",
+    "static/css/main.1faadc04.chunk.css.map": "/gymshark-workouts/static/css/main.1faadc04.chunk.css.map",
+    "static/js/2.d8ffe05e.chunk.js.LICENSE.txt": "/gymshark-workouts/static/js/2.d8ffe05e.chunk.js.LICENSE.txt",
     "static/media/gymshark-mix.be83959d.mp4": "/gymshark-workouts/static/media/gymshark-mix.be83959d.mp4",
     "static/media/logo.aee0b773.svg": "/gymshark-workouts/static/media/logo.aee0b773.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.2724331e.js",
-    "static/js/2.cf619222.chunk.js",
-    "static/css/main.93bfcdb9.chunk.css",
-    "static/js/main.5f953eef.chunk.js"
+    "static/js/2.d8ffe05e.chunk.js",
+    "static/css/main.1faadc04.chunk.css",
+    "static/js/main.ca2684cc.chunk.js"
   ]
 }
