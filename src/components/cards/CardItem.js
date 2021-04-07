@@ -11,7 +11,7 @@ const CardItem = ({ genderToggle, name, femaleImage, maleImage, id, onViewExerci
       />
       <div className="card-item-content">
         <h3>{name}</h3>
-        <button type="button" className="card-button" id={id} onClick={onViewExercise}>View exercise</button>
+        <button type="button" className="card-button" onClick={() => onViewExercise(id)}>View exercise</button>
       </div>
     </div>
   );
