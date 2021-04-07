@@ -1,7 +1,8 @@
 .card-item-wrapper {
-  width: 300px;
-  padding: 1.2rem;
+  width: 350px;
+  padding: 1.5rem;
   flex-flow: column;
+  margin: 2rem;
 }
 
 .card-item-wrapper img {

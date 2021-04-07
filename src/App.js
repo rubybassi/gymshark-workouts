@@ -3,9 +3,9 @@ import "./App.css";
 import Nav from "./components/nav/Nav";
 import Footer from "./components/footer/Footer";
 import HeroBanner from "./components/hero-banner/HeroBanner";
-import CardItem from "./components/cards/CardItem";
 import FeatureBar from "./components/featureBar/FeatureBar";
-import Modal from "./components/modal/Modal";
+import Cards from "./components/cards/Cards";
+import ModalData from "./components/modal/ModalData";
 
 const URL =
   "https://private-922d75-recruitmenttechnicaltest.apiary-mock.com/customexercises/";
@@ -27,10 +27,12 @@ function App() {
           //setWorkouts(payload.exercises.slice(0, 12) || []); just displaying 12 results but will try to add pagination as ~250 results
           setWorkouts(payload.exercises || []);
           setIsLoading(false);
-        } else throw "payload is empty or not an array";
+        } else throw new Error("payload is empty or not an array");
       } catch (error) {
         console.log(error.message);
-        setErrorMessage("Sorry there has been an error fetching your workouts.");
+        setErrorMessage(
+          "Sorry there has been an error fetching your workouts."
+        );
         setIsLoading(false);
       }
     };
@@ -41,8 +43,8 @@ function App() {
 
   const onModalToggle = () => setShowModal((prev) => !prev);
 
-  const onViewExercise = (e) => {
-    setSelectedExcercise(e.target.id);
+  const onViewExercise = (id) => {
+    setSelectedExcercise(id);
     setShowModal(true);
   };
 
@@ -59,35 +61,25 @@ function App() {
           <h2>Fecthing workouts...</h2>
         ) : (
           <>
-            {errorMessage && <h2>{errorMessage}</h2>}
+            {errorMessage && (
+              <h2 className="error-message-container">{errorMessage}</h2>
+            )}
             {workouts.length > 0 ? (
               <>
-                {workouts.map((exercise) => (
-                  <CardItem
-                    key={exercise.id}
-                    genderToggle={genderToggle}
-                    name={exercise.name}
-                    femaleImage={exercise.female.image}
-                    maleImage={exercise.male.image}
-                    id={exercise.id}
-                    onViewExercise={onViewExercise}
-                  />
-                ))}
-                {workouts
-                  .filter((exercise) => exercise.id === selectedExercise)
-                  .map((filteredExercise) => (
-                    <Modal
-                      key={filteredExercise.id}
-                      exercise={filteredExercise}
-                      showModal={showModal}
-                      onModalToggle={onModalToggle}
-                      genderToggle={genderToggle}
-                    />
-                  ))}
+                <Cards
+                  workouts={workouts}
+                  onViewExercise={onViewExercise}
+                  genderToggle={genderToggle}
+                />
+                <ModalData
+                  workouts={workouts}
+                  showModal={showModal}
+                  onModalToggle={onModalToggle}
+                  genderToggle={genderToggle}
+                  selectedExercise={selectedExercise}
+                />
               </>
-            ) : (
-              <h2>Sorry, no exercises to display</h2>
-            )}
+            ) : null}
           </>
         )}
       </main>

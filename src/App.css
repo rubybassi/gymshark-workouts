@@ -36,7 +36,6 @@ a:visited {
 }
 
 .container {
-  /* padding: 0 50px 0 50px; */
   width: 100%;
   height: 100%;
   background-color: var(--brand-grey);
@@ -49,4 +48,12 @@ a:visited {
 
 .container h2 {
   font-size: 2rem;
+}
+
+.error-message-container {
+  padding-top: 300px;
+  height: 100vh;
+  color: #000000;
+  text-align: center;
+  width: 100%;
 }

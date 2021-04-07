@@ -1,15 +1,14 @@
-import React from 'react'
-import Toggle from  "../toggle/Toggle"
-import './feature.css'
+import React from "react";
+import Toggle from "../toggle/Toggle";
+import "./feature.css";
 
-const FeatureBar = ({ handleGenderSelection, genderToggle}) => {
+const FeatureBar = ({ handleGenderSelection }) => {
   return (
     <div className="feature-container" id="featured">
       <h2>Personalise your experience</h2>
-      <Toggle handleGenderSelection={handleGenderSelection}/>
-      {/* <h3>{genderToggle}</h3> */}
+      <Toggle handleGenderSelection={handleGenderSelection} />
     </div>
-  )
-}
+  );
+};
 
-export default FeatureBar
+export default FeatureBar;
