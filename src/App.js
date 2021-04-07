@@ -16,7 +16,7 @@ function App() {
   const [errorMessage, setErrorMessage] = useState("");
   const [genderToggle, setGenderToggle] = useState("womens");
   const [showModal, setShowModal] = useState(false);
-  const [selectedExercise, setSelectedExcercise] = useState("");
+  const [selectedExercise, setSelectedExcercise] = useState(null);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -24,7 +24,6 @@ function App() {
         const response = await fetch(URL);
         const payload = await response.json();
         if (payload && Array.isArray(payload.exercises)) {
-          //setWorkouts(payload.exercises.slice(0, 12) || []); just displaying 12 results but will try to add pagination as ~250 results
           setWorkouts(payload.exercises || []);
           setIsLoading(false);
         } else throw new Error("payload is empty or not an array");
@@ -39,7 +38,7 @@ function App() {
     fetchData();
   }, []);
 
-  const handleGenderSelection = (e) => setGenderToggle(e.target.value);
+  const handleGenderSelection = (e) => setGenderToggle(e.target.id);
 
   const onModalToggle = () => setShowModal((prev) => !prev);
 

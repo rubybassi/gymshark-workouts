@@ -3,24 +3,22 @@ import "./toggle.css";
 
 const Toggle = ({ handleGenderSelection, genderToggle }) => {
   return (
-      <div className="toggle-container">
-        <input
-          type="radio"
-          id="radio-one"
-          value="mens"
-          checked={genderToggle === "mens"}
-          onChange={handleGenderSelection}
-        />
-        <label htmlFor="radio-one">Mens</label>
-        <input
-          type="radio"
-          id="radio-two"
-          value="womens"
-          checked={genderToggle === "womens"}
-          onChange={handleGenderSelection}
-        />
-        <label htmlFor="radio-two">Womens</label>
-      </div>
+    <div className="toggle-container">
+      <button
+        id="mens"
+        className={genderToggle === "mens" ? "selected" : null}
+        onClick={handleGenderSelection}
+      >
+        Mens
+      </button>
+      <button
+        id="womens"
+        className={genderToggle === "womens" ? "selected" : null}
+        onClick={handleGenderSelection}
+      >
+        Womens
+      </button>
+    </div>
   );
 };
 

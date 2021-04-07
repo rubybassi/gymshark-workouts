@@ -4,23 +4,21 @@
   justify-content: center;
 }
 
- .toggle-container input {
-  display: none;
-} 
-
-.toggle-container label {
+.toggle-container button {
   font-size: 1.6rem;
   padding: 2rem;
+  background: transparent;
+  color: white;
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
   border: solid 1px white;
   width: 150px;
 }
 
-.toggle-container label:hover {
+.toggle-container button:hover {
   cursor: pointer;
 }
 
-.toggle-container input:checked {
-  background-color: white;
+.toggle-container button.selected {
+  background-color: #ffffff;
   color: #000;
 }
